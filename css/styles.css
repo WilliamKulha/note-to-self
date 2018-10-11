@@ -1,0 +1,21 @@
+#work_goes_here {
+  color: #fff;
+  cursor:pointer;
+}
+
+#work_goes_here:hover {
+  text-decoration:underline;
+}
+
+.main-page {
+  background-color:#ddd8d9;
+  padding:10px;
+  border-radius:10px;
+}
+
+.top-bg {
+  background-color:#fcb9c3;
+  color:#fff;
+  border-radius:15px;
+  padding-top:5px;
+}
