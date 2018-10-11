@@ -10,53 +10,55 @@
   </head>
   <body>
     <div class="container">
-      <div class="text-center page-header">
+      <div class="text-center page-header top-bg">
         <h1>NOTE TO SELF</h1>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="form-with-border">
-            <div class="text-center">
-              <h3>To-do</h3>
-            </div>
-            <form id="task_form">
-              <div class="form-group">
-                <label for="work">The task at hand</label>
-                <input type="text" class="form-control" id="work">
-              </div>
-              <div class="form-group">
-                <label for="time">How long it'll take</label>
-                <input type="text" class="form-control" id="time">
-              </div>
-              <div class="form-group">
-                <label for="note">Note-to-self</label>
-                <input type="text" class="form-control" id="note">
-              </div>
-              <hr class="hr-white">
+      <div class="main-page">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-with-border">
               <div class="text-center">
-                <button type="submit" class="btn btn-soft">Add it</button>
+                <h3>To-do</h3>
               </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center">
-            <h3>Work</h3>
-            <p id="work_goes_here">
-            </p>
-          </div>
-          <div class="text-center">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div id="task_at_hand">
-            <div class="text-center">
-              <h3></h3>
+              <form id="task_form">
+                <div class="form-group">
+                  <label for="work">The task at hand</label>
+                  <input type="text" class="form-control" id="work">
+                </div>
+                <div class="form-group">
+                  <label for="time">How long it'll take</label>
+                  <input type="text" class="form-control" id="time">
+                </div>
+                <div class="form-group">
+                  <label for="note">Note-to-self</label>
+                  <input type="text" class="form-control" id="note">
+                </div>
+                <hr class="hr-white">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-soft">Add it</button>
+                </div>
+              </form>
             </div>
-            <p>Time: <span class="time_estimate"></span></p>
-            <p>Note to Self: <span class="note_to_self"></span></p>
+          </div>
+          <div class="col-md-4">
             <div class="text-center">
-              <button id="task_done" class="btn btn-sm btn-danger">Done</button>
+              <h3>Work</h3>
+              <p id="work_goes_here">
+              </p>
+            </div>
+            <div class="text-center">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="task_at_hand">
+              <div class="text-center">
+                <h3></h3>
+              </div>
+              <p>Time: <span class="time_estimate"></span></p>
+              <p>Note to Self: <span class="note_to_self"></span></p>
+              <div class="text-center">
+                <button id="task_done" class="btn btn-sm btn-danger">Done</button>
+              </div>
             </div>
           </div>
         </div>
