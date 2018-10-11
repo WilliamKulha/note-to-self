@@ -16,6 +16,8 @@ $(document).ready(function() {
     let note = $('#note').val();
 
     let currentTask = new Task(work, time, note);
-    console.log(currentTask);
+
+    $('#work_goes_here').append(`<span class="work_item">` + currentTask.workToDo + `</span><br>`)
+    console.log(currentTask.workToDo);
   });
 });
