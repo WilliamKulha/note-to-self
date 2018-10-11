@@ -7,6 +7,15 @@ function Task (work, time, note) {
   this.noteToSelf = note;
 }
 
-Task.prototype.eraseTask = function(taskToDelete) {
-  delete taskToDelete;
-}
+//User logic
+$(document).ready(function() {
+  $('#task_form').submit(function(event) {
+    event.preventDefault();
+    let work = $('#work').val();
+    let time = $('#time').val();
+    let note = $('#note').val();
+
+    let currentTask = new Task(work, time, note);
+    console.log(currentTask);
+  });
+});
