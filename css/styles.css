@@ -19,3 +19,7 @@
   border-radius:15px;
   padding-top:5px;
 }
+
+#task_at_hand {
+  display:none;
+}
