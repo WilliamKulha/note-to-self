@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     let currentTask = new Task(work, time, note);
 
-    $('#work_goes_here').append(`<span class="work_item">` + currentTask.workToDo + `</span><br>`)
+    $('#work_goes_here').prepend(`<span class="work_item">` + currentTask.workToDo + `</span><br>`)
     $('#work_goes_here').last().click(function() {
       $('#task_at_hand').slideDown();
       $('#task_at_hand h3').text(currentTask.workToDo);
