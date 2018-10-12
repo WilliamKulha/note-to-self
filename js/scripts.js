@@ -19,10 +19,14 @@ $(document).ready(function() {
 
     $('#work_goes_here').append(`<span class="work_item">` + currentTask.workToDo + `</span><br>`)
     $('#work_goes_here').last().click(function() {
+      $('#task_at_hand').slideDown();
       $('#task_at_hand h3').text(currentTask.workToDo);
       $('.time_estimate').text(currentTask.timeEstimate);
       $('.note_to_self').text(currentTask.noteToSelf);
     });
+    $('#task_done').click(function() {
+      $('#task_at_hand').slideUp();
+    })
     console.log(currentTask.workToDo);
   });
 });
