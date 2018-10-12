@@ -27,6 +27,9 @@ $(document).ready(function() {
     $('#task_done').click(function() {
       $('#task_at_hand').slideUp();
     })
+    $('.work_item').dblclick(function() {
+      this.remove();
+    });
     console.log(currentTask.workToDo);
   });
 });
